@@ -1,6 +1,26 @@
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <header className="bg-white border-b">
+  <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div className="font-bold text-xl text-slate-900">
+      AIYA Transporte
+    </div>
+
+    <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-700">
+      <a href="#leistungen" className="hover:text-amber-600">Leistungen</a>
+      <a href="#ueber-uns" className="hover:text-amber-600">Über uns</a>
+      <a href="#kontakt" className="hover:text-amber-600">Kontakt</a>
+    </nav>
+
+    <a
+      href="#kontakt"
+      className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-4 py-2 rounded-lg text-sm"
+    >
+      Anfrage stellen
+    </a>
+  </div>
+</header>  
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -20,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-6">
+      <section id="leistungen" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10">
             Unsere Leistungen
@@ -58,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="bg-gray-100 py-20 px-6">
+      <section id="ueber-uns" className="bg-gray-100 py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">
             Über AIYA Transporte
@@ -74,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="py-20 px-6">
+      <section id="kontakt" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">
             Kontakt
